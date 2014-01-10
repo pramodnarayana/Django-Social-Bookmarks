@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}User: {{username}}{% endblock %}
+{% block external %}
+  <script type='text/javascript' src='/site_media/bookmark_edit.js'></script>
+{% endblock %}
+{% block head %}Bookmarks for {{username}}{% endblock %}
+{% block content %}
+  <div id='friends_nav'>
+  {% ifequal user.username username %}
+    <a href='/friends/{{username}}/'>View your friends</a>
+  {% else %}
+    {% if is_friend %}
+      <a href='/friends/{{user.username}}/'>{{ username }} is a friend of yours</a>
+    {% else %}
+      <a href='/friend/add/?username={{ username }}'>Add {{ username }} to your friends</a>
+    {% endif %}
+    | <a href='/friends/{{ username }}/'>View {{ username }}'s friends</a>
+  {% endifequal %}
+  </div>    
+  {% include 'bookmark_list.html' %}
+{% endblock %}

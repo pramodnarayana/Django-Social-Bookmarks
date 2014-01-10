@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Save Bookmark{% endblock %}
+{% block external %}
+  <link rel='stylesheet' href='/site_media/themes/base/jquery.ui.all.css'>
+  <script type='text/javascript' src='/site_media/jquery-1.9.1.js'></script>
+  <script type='text/javascript' src='/site_media/ui/jquery.ui.core.js'></script>
+  <script type='text/javascript' src='/site_media/ui/jquery.ui.widget.js'></script>
+  <script type='text/javascript' src='/site_media/ui/jquery.ui.position.js'></script>
+  <script type='text/javascript' src='/site_media/ui/jquery.ui.menu.js'></script>
+  <script type='text/javascript' src='/site_media/ui/jquery.ui.autocomplete.js'></script>
+  <script type='text/javascript' src='/site_media/tag_autocomplete.js'></script>
+{% endblock %}
+{% block head %}Save Bookmark{% endblock %}
+{% block content %}
+{% include 'bookmark_save_form.html' %}
+{% endblock %}
+

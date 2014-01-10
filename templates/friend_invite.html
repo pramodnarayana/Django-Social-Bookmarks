@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}{% trans 'Invite a Friend' %}{% endblock %}
+{% block head %}{% trans 'Invite a Friend' %}{% endblock %}
+{% block content %}
+<h2> {% trans 'Send invitation to your friends' %}</h2>
+<form method='POST' action='.'>
+  {{ form.as_p }}
+  <input type='submit' value='{% trans 'send_invite' %}'/>
+<form>
+{% endblock %}
