@@ -31,7 +31,7 @@ SITE_HOST = 'localhost:8000'
 DEFAULT_FROM_EMAIL = 'pramod.narayana@gmail.com'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'pramod.narayana@gmail.com'
-EMAIL_HOST_PASSWORD = 'lmnnp_1981'
+EMAIL_HOST_PASSWORD = 'xxxx'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
