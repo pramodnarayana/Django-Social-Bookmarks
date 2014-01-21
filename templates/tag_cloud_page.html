@@ -3,9 +3,13 @@
 {% block head %}Tag Cloud{% endblock %}
 {% block content %}
   <div id="tag-cloud">
-    {% for tag in tags %}
-      <a href="/tag/{{ tag.name }}/"class="tag-cloud-{{ tag.weight }}">{{ tag.name }}</a>
-    {% endfor %}
+    {% if tags %}
+      {% for tag in tags %}
+        <a href="/tag/{{ tag.name }}/"class="tag-cloud-{{ tag.weight }}">{{ tag.name }}</a>
+      {% endfor %}
+    {% else %}
+      <h2>No Tags Found</h2>
+    {%endif%}
   </div>
 {% endblock %}
 

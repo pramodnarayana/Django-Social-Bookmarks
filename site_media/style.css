@@ -33,7 +33,11 @@ ul.tags, ul.tags li {
 
 
 ul.bookmarks .edit {
-    font-size: 70%;
+    font-size: 80%;
+}
+
+ul.bookmarks .delete_bookmark {
+    font-size: 80%;
 }
 
 .comment {

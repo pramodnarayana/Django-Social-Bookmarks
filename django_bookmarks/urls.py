@@ -54,5 +54,6 @@ urlpatterns = patterns('',
     url(r'^register/success/$', TemplateView.as_view(template_name='registration/register_success.html')),
     # Account management
     url(r'^save/$', 'bookmarks.views.bookmark_save_page'),
+    url(r'^delete/$', 'bookmarks.views.bookmark_delete'),
     url(r'^image/$', 'bookmarks.views.my_image')
 )

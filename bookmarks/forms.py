@@ -1,6 +1,7 @@
 from django import forms as forms
 import re
 from django.contrib.auth.models import User
+from django.core.validators import validate_email
 from django.core.exceptions import ObjectDoesNotExist
 from django.utils.translation import gettext_lazy as _
 

@@ -6,6 +6,9 @@
         {% if show_edit %}
           <a href='/save/?url={{ bookmark.link.url|urlencode }}' class='edit'>[edit]</a>
         {% endif %}
+        {% if show_delete %}
+          <a href='/delete/?url={{ bookmark.link.url|urlencode }}' class='delete_bookmark'>[x]</a>
+        {% endif %}
         </br>
         {% if show_tags %}
           Tags:
