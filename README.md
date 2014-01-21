@@ -1,4 +1,5 @@
-Python 3.2
+Python 2.7
 Django 1.6
-Sqlite
+Mysql
 jquery
+Apache
